@@ -8,7 +8,7 @@ export default function Home() {
   const products = useSelector(selectAllProducts);
 
   return (
-    <main className="container-fluid vh-100 p-3" style={{ backgroundColor: '#f8f9fa' }}>
+    <main className="container-fluid vh-100 p-3">
       <div className="row h-100 g-3">
         {/* Chat Interface Column */}
         <div className="col-lg-4 col-md-5 h-100 d-flex flex-column">
@@ -18,7 +18,7 @@ export default function Home() {
         {/* Product List Column */}
         <div className="col-lg-8 col-md-7 h-100">
           <div className="h-100 overflow-auto p-2" style={{ scrollbarWidth: 'thin' }}>
-            <h2 className="mb-4 text-center text-dark sticky-top bg-light py-2" style={{ zIndex: 10 }}>Featured Products</h2>
+            <h2 className="mb-4 text-center text-dark sticky-top glass-header py-3 rounded-3 shadow-sm" style={{ zIndex: 10, fontSize: '1.5rem', fontWeight: '700', color: 'var(--primary-dark)' }}>Featured Products</h2>
             <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
               {products.map((product) => (
                 <div key={product.id} className="col">
