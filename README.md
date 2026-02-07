@@ -11,7 +11,7 @@ SmartCart is a lightweight, AI-powered shopping assistant built with Next.js (Re
 
 1.  **Clone the repository:**
     ```bash
-    git clone <your-repo-url>
+    git clone https://github.com/jeffxguo/Smart-Cart.git
     cd smart-cart
     ```
 
